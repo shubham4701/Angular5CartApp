@@ -1,0 +1,5 @@
+<div class="alert alert-danger" role="alert" *ngIf="invalidCredentials">
+        <strong>Invalid credentials!</strong> Please enter correct details and try submitting again.
+      </div>
+      
+<app-mysign [title]="title" [hasSignUp]="hasSignUp" (eventUserClicked)="doLogin($event)"></app-mysign>

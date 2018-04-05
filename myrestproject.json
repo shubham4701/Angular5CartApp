@@ -1,0 +1,34 @@
+{
+  "wsproducts": [
+    {
+      "id": 1,
+      "name": "iPhone X",
+      "price": 82999,
+      "description": "The latest creation from Apple!"
+    },
+    {
+      "id": 2,
+      "name": "Mi TV 4",
+      "price": 39999,
+      "description": "The best of LED and LCD in one"
+    },
+    {
+      "id": 4,
+      "name": "MacBook Pro 2018",
+      "price": 149999,
+      "description": "The best work machine yet!"
+    },
+    {
+      "id": 5,
+      "name": "Sony Xperia X",
+      "price": 62999,
+      "description": "The camera legend with great body."
+    },
+    {
+      "id": 6,
+      "name": "Samsung S8",
+      "price": 56999,
+      "description": "The bezel-less Samsung beauty."
+    }
+  ]
+}

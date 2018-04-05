@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                New Product
+            </div>
+            <div class="card-body text-left">
+                <div class="alert alert-info alert-dismissible fade show" role="alert" *ngIf="createSuccess">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    Product added! <a routerLink="/manage">Browse List</a>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Product ID</label>
+                        <input class="form-control" placeholder="ID" [(ngModel)]="frmProduct.id" readonly name="frmProduct.id">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Product Name</label>
+                        <input class="form-control" placeholder="Name" [(ngModel)]="frmProduct.name" name="frmProduct.name">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Product Price</label>
+                        <input class="form-control" placeholder="Price" [(ngModel)]="frmProduct.price" name="frmProduct.price" type="number">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Product Description</label>
+                        <input class="form-control" placeholder="Description" [(ngModel)]="frmProduct.description" name="frmProduct.description">
+                    </div>
+                    <div class="form-group text-center">
+                        <button class="btn btn-success" (click)="addProduct()">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

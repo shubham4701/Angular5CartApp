@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header text-white bg-primary">{{title}}</div>
+            <div class="card-body">
+                <form class="text-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Username" #user>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" #password>
+                    </div>
+                    <div class="form-group text-center">
+                        <button class="btn btn-secondary" type="button" *ngIf="hasSignUp">
+                            <a routerLink='/signup'>Sign Up</a>
+                        </button>
+                        <button type="button" class="btn btn-success" (click)="handleButtonClick(user.value, password.value)">
+                            {{title}}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
